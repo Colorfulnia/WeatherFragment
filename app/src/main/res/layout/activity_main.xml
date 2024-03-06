@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentCurrentWeatherInfoContainer"
+        android:name="com.tao.weatherfragment.CurrentWeatherInfoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_current_weather_info" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentCurrentDetailInfoContainer"
+        android:name="com.tao.weatherfragment.CurrentDetailInfoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_current_detail_info" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentHourlyInfoContainer"
+        android:name="com.tao.weatherfragment.HourlyInfoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_hourly_info" />
+
+</LinearLayout>
